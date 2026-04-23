@@ -1,90 +1,92 @@
-# Kamaleon 2: Descargar por listas - Método de Descarga de los 2000s
+# Kamaleon 2: Download by Lists - A 2000s Download Method
 
-[English](README.md) | [Español]
+[Español](README.md) | [English]
 
-Este repositorio tiene como objetivo documentar y preservar el conocimiento sobre el uso de **Kamaleon 2**, utilizada en la década de los 2000 para la gestión, partición y camuflaje de archivos grandes.
+This repository documents and preserves knowledge about **Kamaleon 2**, a tool used in the 2000s for managing, splitting, and camouflaging large files.
 
-![Interfaz de Unión - Selección](kamaleon-merge-1.png)
+> **⚠️ Note:** The software interface, as well as the original help documentation included in this repository, are in **Spanish**.
 
-## ¿Qué era Kamaleon 2?
+![Join Interface - Selection](kamaleon-merge-1.png)
 
-En una era donde los servicios de almacenamiento en la nube eran limitados y las velocidades de conexión eran bajas, Kamaleon permitía a los usuarios:
-1. **Partir archivos grandes**: Dividir archivos en trozos más pequeños (ej. 1.44MB para disquetes o tamaños personalizados para servidores de hosting).
-2. **Camuflaje (Pieles)**: Disfrazar las partes de un archivo como si fueran otros tipos de archivos (comúnmente imágenes .jpg) para evitar filtros de contenido o simplemente por discreción.
-3. **Generación de Listas**: Crear archivos `.lst` o `.txt` con las URLs de descarga para ser procesadas por gestores de descarga.
+## What was Kamaleon 2?
 
-## Contenido del Repositorio
+In an era where cloud storage services were limited and connection speeds were low, Kamaleon allowed users to:
+1. **Split large files**: Divide files into smaller chunks (e.g., 1.44MB for floppy disks or custom sizes for hosting servers).
+2. **Camouflage (Skins)**: Disguise file parts as other file types (commonly `.jpg` images) to bypass content filters or for discretion.
+3. **List Generation**: Create `.lst` or `.txt` files with download URLs to be processed by download managers.
 
-- `kamaleon2.zip`: Archivo comprimido que contiene el programa original ejecutable.
-- `Ayuda/`: Contiene los archivos originales del tutorial de ayuda del programa en español (HTML e imágenes).
-- `Ejemplo/`: Ejemplo práctico.
+## Repository Content
 
----
-
-# Guía de Uso 
-
-Esta guía detalla los procesos principales del software Kamaleon 2 basándose en su documentación original.
-
-## 1. Partir un Archivo
-El proceso de partición permite dividir un archivo grande en partes más pequeñas.
-
-1. **Selección**: Presionar el botón de "Archivo Origen" y seleccionar el archivo a procesar.
-2. **Seguridad**: Opcionalmente, se puede establecer una contraseña para la unión posterior.
-3. **Tipo de Partición**:
-   - **Fijas**: Especificar el tamaño exacto en Bytes.
-   - **Aleatorias**: Definir un rango (mínimo/máximo) para que cada parte tenga un tamaño distinto.
-4. **Camuflaje (Pieles)**:
-   - Se pueden usar "Pieles" para que las particiones parezcan archivos normales (como imágenes).
-   - Kamaleon incrusta la información real dentro de estos archivos de fachada.
-5. **Formato de Nombres**: Se puede elegir un nombre base o generar nombres aleatorios para las partes.
-
-## 2. Unir un Archivo
-Para recuperar el archivo original:
-
-1. **Localización**: Es fundamental encontrar el **Último Archivo** de la serie de particiones. Este archivo "Principal" contiene los metadatos al final de su estructura.
-
-![Interfaz de Partición](kamaleon-main-file.png)
-
-2. **Verificación**: El programa realizará un chequeo minucioso para confirmar que todas las partes están presentes y no están dañadas.
-
-![Interfaz de Unión - Progreso](kamaleon-merge-2.png)
-
-3. **Destino**: Seleccionar la carpeta donde se reconstruirá el archivo original.
-
-## 3. Generar Lista de Descarga
-Útil para compartir archivos alojados en servidores web.
-
-1. **Cargar Metadatos**: Seleccionar el último archivo de las particiones ya subidas.
-2. **Configurar URL**: Introducir la URL base del servidor (ej. `http://misitio.com/archivos/`).
-3. **Rangos**: Si los archivos están en diferentes servidores, se pueden configurar múltiples direcciones y rangos de partes.
-4. **Archivo Final**: Se genera un archivo `.lst` o `.txt` compatible con la mayoría de los gestores de descarga.
-
-![Generador de Listas](list.png)
-
-## Gestores de Descarga
-Históricamente se usaban programas como FlashGet o GetRight. Actualmente, se recomienda:
-- **[JDownloader 2](https://jdownloader.org/)**: Soporta la importación de listas de enlaces y facilita la descarga por lotes.
-- **[aria2](https://aria2.github.io/)**: Una utilidad de descarga multiprotocolo y multifuente ligera para la línea de comandos.
-
-![FlashGet Ejemplo 2](flashget2.png)
-![FlashGet Ejemplo 1](flashget1.png)
-
-## Compatibilidad y Requisitos
-Kamaleon 2 es un software antiguo (Legacy) diseñado originalmente para Windows XP y 7. Sin embargo:
-- **Windows 10**: Ha sido testeado exitosamente en **Windows 10 LTSC 21H2 (Compilación 19044.6456)**.
-- **Linux**: Se recomienda el uso de **Wine** para ejecutar el binario `kamaleon2.zip`.
-- **Otros**: En sistemas Windows modernos, si experimentas errores, intenta ejecutar el programa en "Modo de compatibilidad para Windows XP (Service Pack 3)".
+- `kamaleon2.zip`: Compressed file containing the original executable program.
+- `Ayuda/`: Contains the original help tutorial files in Spanish (HTML and images).
+- `Ejemplo/`: Practical example.
 
 ---
 
-## Ejemplo Práctico: Big Buck Bunny
-Para este ejemplo práctico, se ha utilizado el cortometraje de **dominio público** (licencia Creative Commons) **Big Buck Bunny**. Este archivo ha sido procesado siguiendo este procedimiento:
+# Usage Guide 
 
-1. **Partición**: El video original se ha dividido en múltiples partes de tamaño reducido.
-2. **Camuflaje**: Cada parte ha sido "camuflada" utilizando imágenes (Pieles) para demostrar cómo se ocultaba el contenido real.
+This guide details the main processes of Kamaleon 2 based on its original documentation.
 
-### Enlaces de Descarga del Ejemplo
-Puedes copiar la siguiente lista de enlaces para usarlos en tu gestor de descargas (como JDownloader):
+## 1. Splitting a File (Partir)
+The splitting process allows you to divide a large file into smaller parts.
+
+1. **Selection**: Press the "Archivo Origen" (Source File) button and select the file to process.
+2. **Security**: Optionally, you can set a password for later joining.
+3. **Partition Type**:
+   - **Fijas (Fixed)**: Specify the exact size in Bytes.
+   - **Aleatorias (Random)**: Define a range (min/max) so each part has a different size.
+4. **Camouflage (Pieles/Skins)**:
+   - "Skins" can be used so that the partitions look like normal files (like images).
+   - Kamaleon embeds the real information within these facade files.
+5. **Name Format**: You can choose a base name or generate random names for the parts.
+
+## 2. Joining a File (Unir)
+To recover the original file:
+
+1. **Location**: It is essential to find the **Last File** of the partition series. This "Main" file contains the metadata at the end of its structure.
+
+![Partition Interface](kamaleon-main-file.png)
+
+2. **Verification**: The program will perform a thorough check to confirm that all parts are present and not corrupted.
+
+![Join Interface - Progress](kamaleon-merge-2.png)
+
+3. **Destination**: Select the folder where the original file will be reconstructed.
+
+## 3. Generating a Download List
+Useful for sharing files hosted on web servers.
+
+1. **Load Metadata**: Select the last file of the partitions already uploaded.
+2. **Configure URL**: Enter the base URL of the server (e.g., `http://mysite.com/files/`).
+3. **Ranges**: If files are on different servers, multiple addresses and part ranges can be configured.
+4. **Final File**: A `.lst` or `.txt` file is generated, compatible with most download managers.
+
+![List Generator](list.png)
+
+## Download Managers
+Historically, programs like FlashGet or GetRight were used. Currently, it is recommended to use:
+- **[JDownloader 2](https://jdownloader.org/)**: Supports importing link lists and facilitates batch downloads.
+- **[aria2](https://aria2.github.io/)**: A lightweight multi-protocol & multi-source command-line download utility.
+
+![FlashGet Example 2](flashget2.png)
+![FlashGet Example 1](flashget1.png)
+
+## Compatibility and Requirements
+Kamaleon 2 is legacy software originally designed for Windows XP and 7. However:
+- **Windows 10**: It has been successfully tested on **Windows 10 LTSC 21H2 (Build 19044.6456)**.
+- **Linux**: Using **Wine** is recommended to run the `kamaleon2.zip` binary.
+- **Others**: On modern Windows systems, if you experience errors, try running the program in "Compatibility mode for Windows XP (Service Pack 3)".
+
+---
+
+## Practical Example: Big Buck Bunny
+For this practical example, the **public domain** short film (Creative Commons license) **Big Buck Bunny** has been used. This file has been processed following this procedure:
+
+1. **Partitioning**: The original video has been split into multiple small parts.
+2. **Camouflage**: Each part has been "camouflaged" using images (Skins) to demonstrate how the real content was hidden.
+
+### Example Download Links
+You can copy the following list of links to use in your download manager (such as JDownloader):
 
 <pre>
 https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb001.jpg
@@ -151,9 +153,6 @@ https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_5
 https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb062.jpg
 </pre>
 
-También puedes descargar los archivos de lista directamente:
+You can also download the list files directly:
 - [BigBuckBunny_512kb.txt](BigBuckBunny_512kb.txt)
 - [BigBuckBunny_512kb.lst](BigBuckBunny_512kb.lst)
-
----
-
