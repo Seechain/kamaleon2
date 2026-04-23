@@ -40,9 +40,13 @@ El proceso de partición permite dividir un archivo grande en partes más peque�
 Para recuperar el archivo original:
 
 1. **Localización**: Es fundamental encontrar el **Último Archivo** de la serie de particiones. Este archivo "Principal" contiene los metadatos al final de su estructura.
+
 ![Interfaz de Partición](kamaleon-main-file.png)
+
 2. **Verificación**: El programa realizará un chequeo minucioso para confirmar que todas las partes están presentes y no están dañadas.
+
 ![Interfaz de Unión - Progreso](kamaleon-merge-2.png)
+
 3. **Destino**: Seleccionar la carpeta donde se reconstruirá el archivo original.
 
 ## 3. Generar Lista de Descarga
