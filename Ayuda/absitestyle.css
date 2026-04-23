@@ -1,0 +1,10 @@
+body    {  background-repeat: repeat-x; background-position: left top}
+.text   {  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #45586B; font-weight: bold; }
+.lang   {  font-family: Arial; font-size: 12px; color: #45586B; font-weight: normal; }
+a       {  color: #FF6666; text-decoration: none; }
+.h1     {  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #45586B; font-weight: bold; }
+.subm   {  background: #FF9999; font-family: Tahoma; font-weight: bold; font-size: 10px; color: #000000; }
+.q      {  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF6666; font-weight: bold; }
+.footer {  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif; font-size: 10px; color: #75889B; font-weight: bold; }
+.fmenu  {  color: #D5D8DB; }
+
