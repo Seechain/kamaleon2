@@ -1,4 +1,4 @@
-# Kamaleon 2: Descargar por listas - Método de Descarga de los 2000s
+# Kamaleon 2: Descargar por listas
 
 [Español] | [English](README.en.md)
 
