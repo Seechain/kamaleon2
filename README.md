@@ -1,7 +1,7 @@
-# Kamaleon 2: Documentación de un Método de Descarga de los 2000s
+# Kamaleon 2: Descargar por listas - Método de Descarga de los 2000s
 
-Este repositorio tiene como objetivo documentar y preservar el conocimiento sobre el uso de **Kamaleon 2**, una herramienta icónica de la década de los 2000 utilizada para la gestión, partición y camuflaje de archivos grandes.
-
+Este repositorio tiene como objetivo documentar y preservar el conocimiento sobre el uso de **Kamaleon 2**, utilizada en la década de los 2000 para la gestión, partición y camuflaje de archivos grandes.
+![Interfaz de Unión - Selección](kamaleon-merge-1.png)
 ## ¿Qué era Kamaleon 2?
 
 En una era donde los servicios de almacenamiento en la nube eran limitados y las velocidades de conexión eran bajas, Kamaleon permitía a los usuarios:
@@ -13,11 +13,11 @@ En una era donde los servicios de almacenamiento en la nube eran limitados y las
 
 - `kamaleon2.zip`: Archivo comprimido que contiene el programa original ejecutable.
 - `Ayuda/`: Contiene los archivos originales del tutorial de ayuda del programa en español (HTML e imágenes).
-- `Ejemplo/`: Espacio reservado para un ejemplo práctico.
+- `Ejemplo/`: Ejemplo práctico.
 
 ---
 
-# Guía de Uso Detallada
+# Guía de Uso 
 
 Esta guía detalla los procesos principales del software Kamaleon 2 basándose en su documentación original.
 
@@ -34,7 +34,7 @@ El proceso de partición permite dividir un archivo grande en partes más peque�
    - Kamaleon incrusta la información real dentro de estos archivos de fachada.
 5. **Formato de Nombres**: Se puede elegir un nombre base o generar nombres aleatorios para las partes.
 
-![Interfaz de Partición](kamaleon-main-file.png)
+
 
 ## 2. Unir un Archivo
 Para recuperar el archivo original:
@@ -43,7 +43,7 @@ Para recuperar el archivo original:
 2. **Verificación**: El programa realizará un chequeo minucioso para confirmar que todas las partes están presentes y no están dañadas.
 3. **Destino**: Seleccionar la carpeta donde se reconstruirá el archivo original.
 
-![Interfaz de Unión - Selección](kamaleon-merge-1.png)
+![Interfaz de Partición](kamaleon-main-file.png)
 ![Interfaz de Unión - Progreso](kamaleon-merge-2.png)
 
 ## 3. Generar Lista de Descarga
@@ -56,29 +56,101 @@ Para recuperar el archivo original:
 
 ![Generador de Listas](list.png)
 
-## 4. Extraer Pieles
-Si se desea recuperar únicamente los archivos que sirvieron de camuflaje (las "Pieles"):
-
-1. **Selección**: Indicar la ubicación del último archivo de las particiones.
-2. **Extracción**: El programa permite guardar las imágenes u otros archivos usados como fachada en un directorio independiente.
-
 ## Gestores de Descarga
 Históricamente se usaban programas como FlashGet o GetRight. Actualmente, se recomienda:
 - **[JDownloader 2](https://jdownloader.org/)**: Soporta la importación de listas de enlaces y facilita la descarga por lotes.
+- **[aria2](https://aria2.github.io/)**: Una utilidad de descarga multiprotocolo y multifuente ligera para la línea de comandos.
 
-![FlashGet Ejemplo 1](flashget1.png)
 ![FlashGet Ejemplo 2](flashget2.png)
+![FlashGet Ejemplo 1](flashget1.png)
+
+## Compatibilidad y Requisitos
+Kamaleon 2 es un software antiguo (Legacy) diseñado originalmente para Windows XP y 7. Sin embargo:
+- **Windows 10**: Ha sido testeado exitosamente en **Windows 10 LTSC 21H2 (Compilación 19044.6456)**.
+- **Linux**: Se recomienda el uso de **Wine** para ejecutar el binario `kamaleon2.zip`.
+- **Otros**: En sistemas Windows modernos, si experimentas errores, intenta ejecutar el programa en "Modo de compatibilidad para Windows XP (Service Pack 3)".
 
 ---
 
 ## Ejemplo Práctico: Big Buck Bunny
-Para este ejemplo práctico, se ha utilizado el cortometraje de **dominio público** (licencia Creative Commons) **Big Buck Bunny**. Este archivo ha sido procesado siguiendo el método histórico:
+Para este ejemplo práctico, se ha utilizado el cortometraje de **dominio público** (licencia Creative Commons) **Big Buck Bunny**. Este archivo ha sido procesado siguiendo este procedimiento:
 
 1. **Partición**: El video original se ha dividido en múltiples partes de tamaño reducido.
 2. **Camuflaje**: Cada parte ha sido "camuflada" utilizando imágenes (Pieles) para demostrar cómo se ocultaba el contenido real.
-3. **Reconstrucción**: Se incluye el archivo principal (el último de la serie) necesario para que Kamaleon 2 pueda identificar y unir todas las piezas nuevamente.
+
+### Enlaces de Descarga del Ejemplo
+Puedes copiar la siguiente lista de enlaces para usarlos en tu gestor de descargas (como JDownloader):
+
+<pre>
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb001.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb002.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb003.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb004.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb005.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb006.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb007.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb008.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb009.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb010.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb011.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb012.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb013.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb014.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb015.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb016.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb017.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb018.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb019.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb020.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb021.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb022.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb023.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb024.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb025.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb026.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb027.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb028.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb029.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb030.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb031.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb032.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb033.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb034.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb035.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb036.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb037.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb038.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb039.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb040.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb041.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb042.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb043.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb044.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb045.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb046.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb047.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb048.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb049.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb050.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb051.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb052.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb053.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb054.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb055.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb056.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb057.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb058.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb059.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb060.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb061.jpg
+https://raw.githubusercontent.com/Seechain/kamaleon2/main/Ejemplo/BigBuckBunny_512kb062.jpg
+</pre>
+
+También puedes descargar los archivos de lista directamente:
+- [BigBuckBunny_512kb.txt](BigBuckBunny_512kb.txt)
+- [BigBuckBunny_512kb.lst](BigBuckBunny_512kb.lst)
 
 *Nota: Big Buck Bunny es un proyecto de la Blender Foundation.*
 
 ---
-*Documentado con fines históricos y educativos.*
+
