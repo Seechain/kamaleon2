@@ -18,8 +18,8 @@ In an era where cloud storage services were limited and connection speeds were l
 ## Repository Content
 
 - `kamaleon2.zip`: Compressed file containing the original executable program.
-- `Ayuda/`: Contains the original help tutorial files in Spanish (HTML and images).
-- `Ejemplo/`: Practical example.
+- `Ayuda`: Contains the original help tutorial files in Spanish (HTML and images).
+- `Ejemplo`: Practical example.
 
 ---
 

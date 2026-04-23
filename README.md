@@ -16,8 +16,8 @@ En una era donde los servicios de almacenamiento en la nube eran limitados y las
 ## Contenido del Repositorio
 
 - `kamaleon2.zip`: Archivo comprimido que contiene el programa original ejecutable.
-- `Ayuda/`: Contiene los archivos originales del tutorial de ayuda del programa en español (HTML e imágenes).
-- `Ejemplo/`: Ejemplo práctico.
+- `Ayuda`: Contiene los archivos originales del tutorial de ayuda del programa en español (HTML e imágenes).
+- `Ejemplo`: Ejemplo práctico.
 
 ---
 
