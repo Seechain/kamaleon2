@@ -1,7 +1,9 @@
 # Kamaleon 2: Descargar por listas - Método de Descarga de los 2000s
 
 Este repositorio tiene como objetivo documentar y preservar el conocimiento sobre el uso de **Kamaleon 2**, utilizada en la década de los 2000 para la gestión, partición y camuflaje de archivos grandes.
+
 ![Interfaz de Unión - Selección](kamaleon-merge-1.png)
+
 ## ¿Qué era Kamaleon 2?
 
 En una era donde los servicios de almacenamiento en la nube eran limitados y las velocidades de conexión eran bajas, Kamaleon permitía a los usuarios:
@@ -34,17 +36,14 @@ El proceso de partición permite dividir un archivo grande en partes más peque�
    - Kamaleon incrusta la información real dentro de estos archivos de fachada.
 5. **Formato de Nombres**: Se puede elegir un nombre base o generar nombres aleatorios para las partes.
 
-
-
 ## 2. Unir un Archivo
 Para recuperar el archivo original:
 
 1. **Localización**: Es fundamental encontrar el **Último Archivo** de la serie de particiones. Este archivo "Principal" contiene los metadatos al final de su estructura.
-2. **Verificación**: El programa realizará un chequeo minucioso para confirmar que todas las partes están presentes y no están dañadas.
-3. **Destino**: Seleccionar la carpeta donde se reconstruirá el archivo original.
-
 ![Interfaz de Partición](kamaleon-main-file.png)
+2. **Verificación**: El programa realizará un chequeo minucioso para confirmar que todas las partes están presentes y no están dañadas.
 ![Interfaz de Unión - Progreso](kamaleon-merge-2.png)
+3. **Destino**: Seleccionar la carpeta donde se reconstruirá el archivo original.
 
 ## 3. Generar Lista de Descarga
 Útil para compartir archivos alojados en servidores web.
