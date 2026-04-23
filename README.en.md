@@ -68,8 +68,7 @@ Historically, programs like FlashGet or GetRight were used. Currently, it is rec
 - **[JDownloader 2](https://jdownloader.org/)**: Supports importing link lists and facilitates batch downloads.
 - **[aria2](https://aria2.github.io/)**: A lightweight multi-protocol & multi-source command-line download utility.
 
-![FlashGet Example 2](flashget2.png)
-![FlashGet Example 1](flashget1.png)
+![aria2 Ejemplo](aria2.png)
 
 ## Compatibility and Requirements
 Kamaleon 2 is legacy software originally designed for Windows XP and 7. However:
